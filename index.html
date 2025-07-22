@@ -137,8 +137,68 @@
 
   <!-- E assim segue... -->
 
-  <!-- Finalize com FAQ, Contato, Mapa e Footer como já fiz antes -->
+ <!-- FAQ -->
+  <section id="faq" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-12 text-center fade-in">Perguntas Frequentes</h2>
+      <div class="space-y-6 max-w-3xl mx-auto">
+        <!-- FAQ repetido -->
+      </div>
+    </div>
+  </section>
 
+  <!-- Contato -->
+  <section id="contato" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-6 fade-in">Fale Conosco</h2>
+      <p class="mb-8">Estamos prontos para atender você. Ligue, mande mensagem ou preencha o formulário.</p>
+      <form class="max-w-xl mx-auto grid grid-cols-1 gap-4 text-left">
+        <!-- Formulário simples -->
+      </form>
+    </div>
+  </section>
+
+  <!-- Mapa -->
+  <section class="bg-white py-8">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6 text-center">Como Chegar</h2>
+      <div class="rounded-lg overflow-hidden shadow-lg">
+        <iframe src="..." width="100%" height="450"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-8">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <img src="zyro-image.png" alt="Logo Piratini" class="h-20 w-auto mb-4 md:mb-0">
+      <div class="flex space-x-6">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div class="text-center mt-6">
+      &copy; 2025 Piratini Materiais de Construção. Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const faders = document.querySelectorAll('.fade-in');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+          }
+        });
+      }, { threshold: 0.1 });
+      faders.forEach(el => observer.observe(el));
+    });
+  </script>
+
+</body>
+</html>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const faders = document.querySelectorAll('.fade-in');
