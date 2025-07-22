@@ -268,56 +268,54 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black text-white py-8">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <!-- Logo Placeholder - Replace with your logo -->
-                    <div class="bg-gray-200 h-12 w-32 flex items-center justify-center">
-                        <span class="text-black font-bold">LOGO PIRATINI</span>
-                    </div>
-                </div>
-                
-                <div class="flex space-x-6">
-                    <a href="#" class="text-gray-300 hover:text-orange-500 transition-colors">
-                        <i class="fab fa-facebook-f text-xl"></i>
-                    </a>
-                    <a href="#" class="text-gray-300 hover:text-orange-500 transition-colors">
-                        <i class="fab fa-instagram text-xl"></i>
-                    </a>
-                    <a href="https://wa.me/5541984233915" target="_blank" class="text-gray-300 hover:text-orange-500 transition-colors">
-                        <i class="fab fa-whatsapp text-xl"></i>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center md:text-left">
-                <p class="text-gray-400">© 2023 Piratini Materiais de Construção. Todos os direitos reservados.</p>
-            </div>
+     <footer class="bg-black text-white py-8">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <!-- Logo Real -->
+          <img src="zyro-image.png" alt="Logo Piratini Materiais de Construção" class="h-12 w-auto object-contain">
         </div>
-    </footer>
 
-    <script>
-        // Simple animation for testimonial cards on scroll
-        document.addEventListener('DOMContentLoaded', function() {
-            const testimonialCards = document.querySelectorAll('.testimonial-card');
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                    }
-                });
-            }, { threshold: 0.1 });
-            
-            testimonialCards.forEach(card => {
-                card.style.opacity = '0';
-                card.style.transform = 'translateY(20px)';
-                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-                observer.observe(card);
-            });
+        <div class="flex space-x-6">
+          <a href="#" class="text-gray-300 hover:text-orange-500 transition-colors">
+            <i class="fab fa-facebook-f text-xl"></i>
+          </a>
+          <a href="#" class="text-gray-300 hover:text-orange-500 transition-colors">
+            <i class="fab fa-instagram text-xl"></i>
+          </a>
+          <a href="https://wa.me/5541984233915" target="_blank" class="text-gray-300 hover:text-orange-500 transition-colors">
+            <i class="fab fa-whatsapp text-xl"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center md:text-left">
+        <p class="text-gray-400">© 2023 Piratini Materiais de Construção. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple animation for testimonial cards on scroll
+    document.addEventListener('DOMContentLoaded', function() {
+      const testimonialCards = document.querySelectorAll('.testimonial-card');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
         });
-    </script>
+      }, { threshold: 0.1 });
+
+      testimonialCards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        observer.observe(card);
+      });
+    });
+  </script>
 </body>
 </html>
