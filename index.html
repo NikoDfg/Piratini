@@ -1,150 +1,325 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Piratini Materiais de Construção | Orçamentos sem Compromisso</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      scroll-behavior: smooth;
-    }
-
-    .bg-orange-gradient {
-      background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
-    }
-
-    .hover-scale {
-      transition: transform 0.3s ease;
-    }
-
-    .hover-scale:hover {
-      transform: scale(1.05);
-    }
-
-    .testimonial-card {
-      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    }
-
-    .floating-button {
-      animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-      0% {
-        box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.7);
-      }
-      70% {
-        box-shadow: 0 0 0 15px rgba(249, 115, 22, 0);
-      }
-      100% {
-        box-shadow: 0 0 0 0 rgba(249, 115, 22, 0);
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piratini Materiais de Construção | Orçamentos sem Compromisso</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .bg-orange-gradient {
+            background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+        }
+        
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        
+        .testimonial-card {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        .floating-button {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(249, 115, 22, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(249, 115, 22, 0);
+            }
+        }
+    </style>
 </head>
 <body class="bg-gray-50">
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/5541984233915" target="_blank" class="fixed bottom-8 right-8 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl shadow-lg z-50 floating-button hover:bg-green-600 transition-colors">
-    <i class="fab fa-whatsapp"></i>
-  </a>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5541984233915" target="_blank" class="fixed bottom-8 right-8 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl shadow-lg z-50 floating-button hover:bg-green-600 transition-colors">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-  <!-- Header -->
-  <header class="bg-black text-white">
-    <div class="container mx-auto px-4 py-3 flex flex-col md:flex-row justify-between items-center">
-      <!-- Logo Real -->
-      <img src="zyro-image.png" alt="Logo Piratini Materiais de Construção" class="h-16 w-auto object-contain mb-4 md:mb-0">
-
-      <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
-        <div class="flex items-center">
-          <i class="fas fa-phone-alt mr-2 text-orange-500"></i>
-          <div>
-            <p class="text-sm">Ligue agora</p>
-            <a href="tel:4133497070" class="font-bold hover:text-orange-500 transition-colors">(41) 3349-7070</a>
-          </div>
+    <!-- Header -->
+    <header class="bg-black text-white">
+        <div class="container mx-auto px-4 py-3 flex flex-col md:flex-row justify-between items-center">
+            <!-- Logo Placeholder - Replace with your logo -->
+            <div class="bg-gray-200 h-16 w-48 flex items-center justify-center mb-4 md:mb-0">
+                <span class="text-black font-bold">LOGO PIRATINI</span>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
+                <div class="flex items-center">
+                    <i class="fas fa-phone-alt mr-2 text-orange-500"></i>
+                    <div>
+                        <p class="text-sm">Ligue agora</p>
+                        <a href="tel:4133497070" class="font-bold hover:text-orange-500 transition-colors">(41) 3349-7070</a>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-map-marker-alt mr-2 text-orange-500"></i>
+                    <div>
+                        <p class="text-sm">Nosso endereço</p>
+                        <p class="font-bold">Rua Eng. João Bley Filho, 1217</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="flex items-center">
-          <i class="fas fa-map-marker-alt mr-2 text-orange-500"></i>
-          <div>
-            <p class="text-sm">Nosso endereço</p>
-            <p class="font-bold">Rua Eng. João Bley Filho, 1217</p>
-          </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="bg-orange-gradient text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Tudo para sua obra em um só lugar!</h1>
+                <p class="text-xl mb-8">Faça agora mesmo seu orçamento sem compromisso!</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="https://wa.me/5541984233915" target="_blank" class="bg-black hover:bg-gray-900 text-white font-bold py-4 px-8 rounded-lg text-center transition-colors hover-scale">
+                        <i class="fab fa-whatsapp mr-2"></i> WhatsApp (41) 9 8423-3915
+                    </a>
+                    <a href="tel:4133497070" class="bg-white hover:bg-gray-100 text-orange-600 font-bold py-4 px-8 rounded-lg text-center transition-colors hover-scale">
+                        <i class="fas fa-phone-alt mr-2"></i> Ligue agora
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Materiais de construção" class="rounded-lg shadow-2xl max-w-full h-auto">
+            </div>
         </div>
-      </div>
-    </div>
-  </header>
+    </section>
 
-  <!-- Hero Banner -->
-  <!-- (Mantido igual) -->
-
-  <!-- Diferenciais -->
-  <!-- (Mantido igual) -->
-
-  <!-- Depoimentos -->
-  <!-- (Mantido igual) -->
-
-  <!-- CTA Section -->
-  <!-- (Mantido igual) -->
-
-  <!-- Info Section -->
-  <!-- (Mantido igual) -->
-
-  <!-- Mapa -->
-  <!-- (Mantido igual) -->
-
-  <!-- Footer -->
-  <footer class="bg-black text-white py-8">
-    <div class="container mx-auto px-4">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <div class="mb-6 md:mb-0">
-          <!-- Logo Real -->
-          <img src="zyro-image.png" alt="Logo Piratini Materiais de Construção" class="h-12 w-auto object-contain">
+    <!-- Diferenciais -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-black">Por que escolher a Piratini?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg text-center hover-scale">
+                    <div class="bg-orange-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-bolt text-orange-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-black">Atendimento Rápido</h3>
+                    <p class="text-gray-600">Nossa equipe está pronta para te atender com agilidade e eficiência.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg text-center hover-scale">
+                    <div class="bg-orange-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-boxes text-orange-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-black">Variedade de Materiais</h3>
+                    <p class="text-gray-600">Tudo para sua obra em um só lugar, com os melhores produtos do mercado.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg text-center hover-scale">
+                    <div class="bg-orange-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-award text-orange-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-black">Qualidade Garantida</h3>
+                    <p class="text-gray-600">Trabalhamos apenas com marcas reconhecidas e materiais de primeira.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg text-center hover-scale">
+                    <div class="bg-orange-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-truck text-orange-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-black">Entrega Ágil</h3>
+                    <p class="text-gray-600">Entregamos seus materiais com rapidez e segurança em toda Curitiba.</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="flex space-x-6">
-          <a href="#" class="text-gray-300 hover:text-orange-500 transition-colors">
-            <i class="fab fa-facebook-f text-xl"></i>
-          </a>
-          <a href="#" class="text-gray-300 hover:text-orange-500 transition-colors">
-            <i class="fab fa-instagram text-xl"></i>
-          </a>
-          <a href="https://wa.me/5541984233915" target="_blank" class="text-gray-300 hover:text-orange-500 transition-colors">
-            <i class="fab fa-whatsapp text-xl"></i>
-          </a>
+    <!-- Depoimentos -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-black">O que nossos clientes dizem</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg testimonial-card hover-scale">
+                    <div class="flex items-center mb-4">
+                        <div class="text-orange-500 text-2xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Fiz toda minha reforma com a Piratini e economizei muito! O atendimento foi excelente e os materiais chegaram antes do prazo."</p>
+                    <div class="flex items-center">
+                        <div class="bg-gray-200 w-10 h-10 rounded-full mr-3"></div>
+                        <div>
+                            <p class="font-bold text-black">Carlos Silva</p>
+                            <p class="text-sm text-gray-500">Residencial - Santa Felicidade</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg testimonial-card hover-scale">
+                    <div class="flex items-center mb-4">
+                        <div class="text-orange-500 text-2xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Sou arquiteto e sempre indico a Piratini para meus clientes. Preços justos, variedade de produtos e atendimento diferenciado."</p>
+                    <div class="flex items-center">
+                        <div class="bg-gray-200 w-10 h-10 rounded-full mr-3"></div>
+                        <div>
+                            <p class="font-bold text-black">Mariana Oliveira</p>
+                            <p class="text-sm text-gray-500">Arquiteta</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg testimonial-card hover-scale">
+                    <div class="flex items-center mb-4">
+                        <div class="text-orange-500 text-2xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Comprei todos os materiais para construir minha casa na Piratini. Fui muito bem atendido e consegui ótimos descontos!"</p>
+                    <div class="flex items-center">
+                        <div class="bg-gray-200 w-10 h-10 rounded-full mr-3"></div>
+                        <div>
+                            <p class="font-bold text-black">Roberto Santos</p>
+                            <p class="text-sm text-gray-500">Residencial - Pinheirinho</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div class="border-t border-gray-800 mt-8 pt-8 text-center md:text-left">
-        <p class="text-gray-400">© 2023 Piratini Materiais de Construção. Todos os direitos reservados.</p>
-      </div>
-    </div>
-  </footer>
+    <!-- CTA Section -->
+    <section class="py-16 bg-black text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Pronto para começar sua obra?</h2>
+            <p class="text-xl mb-8">Solicite seu orçamento agora mesmo e receba uma resposta rápida!</p>
+            <a href="https://wa.me/5541984233915" target="_blank" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-lg inline-flex items-center transition-colors hover-scale">
+                <i class="fab fa-whatsapp mr-2 text-xl"></i> Fale conosco pelo WhatsApp
+            </a>
+        </div>
+    </section>
 
-  <script>
-    // Simple animation for testimonial cards on scroll
-    document.addEventListener('DOMContentLoaded', function() {
-      const testimonialCards = document.querySelectorAll('.testimonial-card');
+    <!-- Info Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-black flex items-center">
+                        <i class="fas fa-map-marker-alt mr-3 text-orange-500"></i> Endereço
+                    </h3>
+                    <p class="text-gray-600">Rua Engenheiro João Bley Filho, 1217<br>Pinheirinho, Curitiba - PR</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-black flex items-center">
+                        <i class="fas fa-clock mr-3 text-orange-500"></i> Horário de Funcionamento
+                    </h3>
+                    <p class="text-gray-600">
+                        <span class="font-medium">Segunda a Sexta:</span> 08:00 às 18:00<br>
+                        <span class="font-medium">Sábado:</span> 08:00 às 12:30<br>
+                        <span class="font-medium">Domingo:</span> Fechado
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-black flex items-center">
+                        <i class="fas fa-envelope mr-3 text-orange-500"></i> Contato
+                    </h3>
+                    <p class="text-gray-600 mb-2">
+                        <span class="font-medium">WhatsApp:</span> (41) 9 8423-3915<br>
+                        <span class="font-medium">Telefone:</span> (41) 3349-7070
+                    </p>
+                    <p class="text-gray-600">
+                        <span class="font-medium">Email:</span> piratinicontato@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-          }
+    <!-- Mapa -->
+    <section class="bg-gray-100 py-8">
+        <div class="container mx-auto px-4">
+            <div class="rounded-lg overflow-hidden shadow-lg">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.238539119644!2d-49.1941239241369!3d-25.46356063336227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dceff1a2f9a3a3%3A0x6d8f3e1a1a1a1a1a!2sRua%20Engenheiro%20Jo%C3%A3o%20Bley%20Filho%2C%201217%20-%20Pinheirinho%2C%20Curitiba%20-%20PR%2C%2081825-100!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <!-- Logo Placeholder - Replace with your logo -->
+                    <div class="bg-gray-200 h-12 w-32 flex items-center justify-center">
+                        <span class="text-black font-bold">LOGO PIRATINI</span>
+                    </div>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-300 hover:text-orange-500 transition-colors">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-orange-500 transition-colors">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="https://wa.me/5541984233915" target="_blank" class="text-gray-300 hover:text-orange-500 transition-colors">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center md:text-left">
+                <p class="text-gray-400">© 2023 Piratini Materiais de Construção. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation for testimonial cards on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const testimonialCards = document.querySelectorAll('.testimonial-card');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            testimonialCards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(card);
+            });
         });
-      }, { threshold: 0.1 });
-
-      testimonialCards.forEach(card => {
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(20px)';
-        card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-        observer.observe(card);
-      });
-    });
-  </script>
+    </script>
 </body>
 </html>
