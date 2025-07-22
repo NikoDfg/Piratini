@@ -2,13 +2,11 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Piratini Materiais de Construção | Orçamento Sem Compromisso</title>
   <meta name="description" content="Faça seu orçamento sem compromisso na Piratini Materiais de Construção. Materiais para obra e reforma com qualidade, entrega rápida em Curitiba.">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -21,16 +19,23 @@
     }
 
     .hover-scale {
-      transition: transform 0.3s ease;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
     }
 
     .hover-scale:hover {
-      transform: scale(1.05);
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 15px 25px -5px rgba(0,0,0,0.2);
     }
 
-    .testimonial-card {
-      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     .floating-button {
@@ -56,9 +61,8 @@
   <header class="bg-black text-white">
     <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 py-4">
       <a href="/" class="mb-4 md:mb-0">
-        <img src="zyro-image.png" alt="Logo Piratini Materiais de Construção" class="h-16 w-auto object-contain">
+        <img src="zyro-image.png" alt="Logo Piratini Materiais de Construção" class="h-24 w-auto object-contain">
       </a>
-
       <div class="flex flex-col md:flex-row items-center gap-4">
         <div class="flex items-center">
           <i class="fas fa-phone-alt text-orange-500 mr-2"></i>
@@ -79,7 +83,7 @@
   </header>
 
   <!-- Hero Banner -->
-  <section class="bg-orange-gradient text-white py-16 md:py-24">
+  <section class="bg-orange-gradient text-white py-16 md:py-24 fade-in">
     <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
       <div class="md:w-1/2 mb-10 md:mb-0">
         <h1 class="text-4xl md:text-5xl font-bold mb-6">Tudo para sua obra em um só lugar!</h1>
@@ -105,90 +109,44 @@
   <!-- Diferenciais -->
   <section class="py-16 bg-white">
     <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-12">Por que escolher a Piratini?</h2>
+      <h2 class="text-3xl font-bold mb-12 fade-in">Por que escolher a Piratini?</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="bg-gray-50 p-6 rounded-lg hover-scale">
+        <div class="bg-gray-50 p-6 rounded-lg hover-scale fade-in">
           <div class="bg-orange-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
             <i class="fas fa-bolt text-orange-500 text-2xl"></i>
           </div>
           <h3 class="text-xl font-bold mb-2">Atendimento Rápido</h3>
-          <p>Equipe pronta para atender com agilidade e atenção.</p>
+          <p>Equipe pronta para atender com agilidade.</p>
         </div>
-        <div class="bg-gray-50 p-6 rounded-lg hover-scale">
+        <div class="bg-gray-50 p-6 rounded-lg hover-scale fade-in">
           <div class="bg-orange-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
             <i class="fas fa-boxes text-orange-500 text-2xl"></i>
           </div>
           <h3 class="text-xl font-bold mb-2">Variedade de Materiais</h3>
-          <p>Completa linha de materiais para obra e reforma.</p>
+          <p>Completa linha de materiais para sua obra.</p>
         </div>
-        <div class="bg-gray-50 p-6 rounded-lg hover-scale">
+        <div class="bg-gray-50 p-6 rounded-lg hover-scale fade-in">
           <div class="bg-orange-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
             <i class="fas fa-award text-orange-500 text-2xl"></i>
           </div>
           <h3 class="text-xl font-bold mb-2">Qualidade Garantida</h3>
-          <p>Produtos de marcas renomadas com garantia de qualidade.</p>
+          <p>Marcas renomadas e garantia de qualidade.</p>
         </div>
-        <div class="bg-gray-50 p-6 rounded-lg hover-scale">
+        <div class="bg-gray-50 p-6 rounded-lg hover-scale fade-in">
           <div class="bg-orange-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
             <i class="fas fa-truck text-orange-500 text-2xl"></i>
           </div>
           <h3 class="text-xl font-bold mb-2">Entrega Rápida</h3>
-          <p>Logística eficiente para sua obra não parar.</p>
+          <p>Entrega eficiente para sua obra não parar.</p>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- Depoimentos -->
-  <section class="py-16 bg-gray-100">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-12">O que nossos clientes dizem</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Depoimentos individuais -->
-        <div class="bg-white p-6 rounded-lg testimonial-card hover-scale">
-          <div class="flex mb-4 text-orange-500 text-2xl">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          <p class="mb-4">"Reforma completa com a Piratini, ótimo atendimento e entrega antes do prazo."</p>
-          <p class="font-bold">Carlos Silva</p>
-          <p class="text-sm text-gray-500">Residencial - Curitiba</p>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg testimonial-card hover-scale">
-          <div class="flex mb-4 text-orange-500 text-2xl">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          <p class="mb-4">"Sou arquiteta e indico a Piratini para meus clientes, sempre confiável."</p>
-          <p class="font-bold">Mariana Oliveira</p>
-          <p class="text-sm text-gray-500">Arquiteta</p>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg testimonial-card hover-scale">
-          <div class="flex mb-4 text-orange-500 text-2xl">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-          </div>
-          <p class="mb-4">"Materiais de qualidade, ótimos preços e entrega ágil."</p>
-          <p class="font-bold">Roberto Santos</p>
-          <p class="text-sm text-gray-500">Construtor - Curitiba</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="bg-black text-white py-16 text-center">
-    <h2 class="text-3xl font-bold mb-6">Pronto para começar?</h2>
-    <p class="text-xl mb-8">Solicite seu orçamento agora mesmo pelo WhatsApp!</p>
-    <a href="https://wa.me/5541984233915" target="_blank"
-       class="bg-orange-500 hover:bg-orange-600 font-bold py-4 px-8 rounded-lg inline-flex items-center hover-scale">
-      <i class="fab fa-whatsapp mr-2"></i> Fale Conosco
-    </a>
   </section>
 
   <!-- Footer -->
   <footer class="bg-black text-white py-8">
     <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
-      <img src="zyro-image.png" alt="Logo Piratini" class="h-12 w-auto mb-4 md:mb-0">
+      <img src="zyro-image.png" alt="Logo Piratini" class="h-20 w-auto mb-4 md:mb-0">
       <div class="flex space-x-6">
         <a href="#" class="hover:text-orange-500"><i class="fab fa-facebook-f text-xl"></i></a>
         <a href="#" class="hover:text-orange-500"><i class="fab fa-instagram text-xl"></i></a>
@@ -202,22 +160,15 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      const cards = document.querySelectorAll('.testimonial-card');
+      const faders = document.querySelectorAll('.fade-in');
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            entry.target.style.opacity = 1;
-            entry.target.style.transform = 'translateY(0)';
+            entry.target.classList.add('show');
           }
         });
       }, { threshold: 0.1 });
-
-      cards.forEach(card => {
-        card.style.opacity = 0;
-        card.style.transform = 'translateY(20px)';
-        card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-        observer.observe(card);
-      });
+      faders.forEach(el => observer.observe(el));
     });
   </script>
 
